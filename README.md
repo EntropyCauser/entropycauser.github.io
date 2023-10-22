@@ -1,2 +1,0 @@
-# entropycauser.github.io
-test
