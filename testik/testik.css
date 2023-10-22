@@ -1,0 +1,227 @@
+footer {
+    background-color: black; /* Цвет фона */
+    color: #fff; /* Цвет текста */
+    padding: 20px; /* Внутренний отступ */
+    text-align: center; /* Выравнивание текста по центру */
+    font-size: 16px; /* Размер шрифта */
+    border:  3px solid #52303e;
+
+
+    margin-bottom: 0px;
+  }
+
+
+  
+  /* При наведении курсора на ссылки */
+  footer:hover {
+    background-color: #2d2a2c;
+    color: black; /* Подчеркивание при наведении */
+  }
+
+  html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    }
+
+body {
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(to right, #000, #52303e);
+    font-family: 'Arial', sans-serif;
+}
+
+main {
+    flex: 1;
+}
+
+
+header {
+  background-color: transparent;
+  color: #fff;
+
+  padding: 10px;
+
+ 
+}
+
+h1{
+
+  font-family: Arial, sans-serif; /* Семейство шрифта */
+  color: white; /* Цвет текста */
+  font-weight: bold; /* Жирность шрифта */
+  text-align: center; /* Выравнивание текста */
+  letter-spacing: 2px;; /* Подчеркивание текста */
+  margin-left: 0%;
+  padding-bottom: 10px;
+  text-decoration: 5px underline  #52303e;
+}
+
+h2{
+
+  font-family:sans-serif ; /* Семейство шрифта */
+  color: white; /* Цвет текста */
+  font-weight: bold; /* Жирность шрифта */
+  text-align: center; /* Выравнивание текста */
+  letter-spacing: 2px; /* Подчеркивание текста */
+  margin-left: 0%;
+  padding-bottom: 0px;
+
+}
+
+h4{
+  font-family:sans-serif ; /* Семейство шрифта */
+  color: white; /* Цвет текста */
+  font-weight: bold; /* Жирность шрифта */
+  text-align: center; /* Выравнивание текста */
+  letter-spacing: 2px;; /* Подчеркивание текста */
+  margin-left: 0%;
+  margin-top: 0px;
+  padding-bottom: 0px;
+
+}
+
+.img{
+  width: 100px;
+  margin-left: 50%;
+  margin-bottom:0px;
+  text-align: center;
+  border: 3px solid #fff ;
+
+}
+
+.div{
+    display: flex;
+    flex-direction: column;
+    background:  #52303e;
+    border: 2px #fff ;
+    height: 250px;
+}
+
+li{
+  color: #373b47;
+}
+
+li:hover{
+  color: black;
+}
+
+.lel{
+  margin-left: 20px;
+  margin-top: 8px;
+  color: black;
+  text-size-adjust: 20px;
+  font-family:sans-serif ;
+  letter-spacing: 1px;
+}
+
+
+.button1 {
+  background-color: black; /* Цвет фона */
+  color: #fff; /* Цвет текста */
+  padding: 10px 20px; /* Внутренний отступ */
+  border: 3px solid white; /* Убираем границу */
+  border-radius: 20px; /* Закругление углов */
+  cursor: pointer; /* Изменение формы курсора при наведении */
+}
+
+.button1:hover {
+  background-color: black; /* Цвет фона */
+  color: #8c6d7a; /* Цвет текста */
+  padding: 10px 20px; /* Внутренний отступ */
+  border: 3px solid #8c6d7a; /* Убираем границу */
+  border-radius: 20px; /* Закругление углов */
+  cursor: pointer; /* Изменение формы курсора при наведении */
+}
+
+/* Стили для второстепенных кнопок */
+.button2 {
+  background-color: black; /* Цвет фона */
+  color: #52303e; /* Цвет текста */
+  padding: 10px 20px; /* Внутренний отступ */
+  border: 3px solid #52303e; /* Граница */
+  border-radius: 20px; /* Закругление углов */
+  cursor: pointer; /* Изменение формы курсора при наведении */
+}
+
+.button2:hover{
+  background-color: black; /* Цвет фона */
+  color: #8c6d7a; /* Цвет текста */
+  padding: 10px 20px; /* Внутренний отступ */
+  border: 3px solid #8c6d7a; /* Убираем границу */
+  border-radius: 20px; /* Закругление углов */
+  cursor: pointer; /* Изменение формы курсора при наведении */
+}
+
+.trapezoid {
+  width: 10;
+  height: 0;
+  border-left: 50px solid transparent; /* Левая граница */
+  border-right: 50px solid transparent; /* Правая граница */
+  border-bottom: 100px solid #3498db;
+}
+.container {
+  display: flex;
+}
+
+.box {
+  width: 500px;
+  height: 1000px;
+  border: 1px solid #000;
+  margin: 10px;
+}
+
+
+.line-container1 {
+  width: 100%;
+  height: 10px; /* Толщина линии */
+  position: relative;
+}
+
+.lefting-line {
+  width: 200px; /* Длина линии */
+  height: 10px;
+  background: linear-gradient(to right, transparent,  #ffffff,transparent); /* Градиент для светящейся линии */
+  position: absolute;
+  animation: lefting 5s linear infinite; /* Анимация движения линии */
+}
+
+.righting-line {
+  width: 200px; /* Длина линии */
+  height: 10px;
+  background: linear-gradient(to right, transparent,  #52303e,transparent); /* Градиент для светящейся линии */
+  position: absolute;
+  animation: righting 5s linear infinite; /* Анимация движения линии */
+}
+
+
+
+@keyframes lefting {
+  0% {
+      left: -0%; /* Начальное положение линии (левая граница) */
+  }
+  100% {
+      Left: 100%; /* Конечное положение линии (правая граница) */
+  }
+}
+
+@keyframes righting {
+  0% {
+      Right: 0%; /* Начальное положение линии (левая граница) */
+  }
+  100% {
+      RIght: 100%; /* Конечное положение линии (правая граница) */
+  }
+}
+
+.centered-div {
+  display: none;
+  background-color: #ccb92a;
+  padding: 20px;
+  border: 1px solid #333;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
